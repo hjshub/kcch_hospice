@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>원자력병원 권역별 호스피스 센터</title>
+
+	<script src="static/js/jquery-3.3.1.min.js"></script>
+	<script src="static/js/jquery-ui.min.js"></script>
+	<script src="static/js/imagesloaded.js"></script>
+	<script src="static/js/slick.js"></script>
+	<script src="static/js/common.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="static/css/base.css"> <!-- reset -->
+	<link rel="stylesheet" type="text/css" href="static/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" media="all and (max-width:1280px)" type="text/css" href="static/css/responsible.css"> <!-- 반응형 -->
+</head>
+<body>
+	<!-- 건너띄기 링크 -->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#gnbList">주 메뉴 바로가기</a></dd>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<!--layer pop-->
+	<div class="lpop" id="lpop_notice_20201008">
+		<a class="lpop_close" href="javascript:void(0);">
+			<em class="hidden_txt">레이어 팝업 닫기</em>
+			<img src="static/img/ico-close.png" alt="레이어 팝업 닫기">
+		</a>
+		<div class="pop-body">
+			<!-- 레이어팝업 컨텐츠 영역-->
+			<img src="static/img/pop_grand_open.jpg" alt="레이어 팝업" />
+		</div>
+		<div class="pop-footer">
+			<input type="checkbox" name="lpopCheck" id="lpopCheck" />
+			<label for="lpopCheck">오늘 하루동안 보지 않기</label>
+		</div>
+	</div>
+
+
+	<!-- 상단 -->
+	<header class="inner">
+		<hgroup class="h_top">
+			<div class="container">
+				<!-- 로고 영역 -->
+				<h1>
+					<a href="\">
+						<span class="hidden_txt">로고 이미지</span>
+						<img src="static/img/logoTop.png" alt="원자력병원 권역별호스피스센터 로고 01" />
+					</a>
+				</h1>
+
+				<!-- Gnb pc-->
+				<nav class="gnb-web" id="gnbList">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/hospice/info/greeting.html">권역별호스피스센터</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/info/greeting.html">인사말</a></li>
+										<li><a href="/hospice/info/history.html">연혁</a></li>
+										<li><a href="/hospice/info/organization.html">조직도</a></li>
+										<li><a href="/hospice/info/business.html">주요사업</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/hospice/specialty/introduce.html">호스피스전문기관</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/specialty/information.html">정보</a></li>
+										<li><a href="/hospice/specialty/introduce.html">소개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/hospice/business/edu.html">호스피스사업</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/business/edu.html">교육</a></li>
+										<li><a href="/hospice/business/promotion.html">홍보</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/hospice/notice/notice.html">열린광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/notice/notice.html">공지사항</a></li>
+										<li><a href="/hospice/notice/pressRelease.html">보도자료</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- Gnb mobile-->
+				<a href="#allMenu" class="m-menu">
+					<i></i>
+					<i></i>
+					<i></i>
+					<em class="hidden_txt">모바일 전체메뉴</em>
+				</a>
+				<aside class="gnb-mob">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="javascript:void(0);">권역별호스피스센터</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/info/greeting.html">인사말</a></li>
+										<li><a href="/hospice/info/history.html">연혁</a></li>
+										<li><a href="/hospice/info/organization.html">조직도</a></li>
+										<li><a href="/hospice/info/business.html">주요사업</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">호스피스전문기관</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/specialty/information.html">정보</a></li>
+										<li><a href="/hospice/specialty/introduce.html">소개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">호스피스사업</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/business/edu.html">교육</a></li>
+										<li><a href="/hospice/business/promotion.html">홍보</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">열린광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/notice/notice.html">공지사항</a></li>
+										<li><a href="/hospice/notice/pressRelease.html">보도자료</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="gnb-bg"><em class="hidden_txt">백그라운드 영역</em></div>
+		</hgroup>
+	</header>
+
+	<!-- 본문 -->
+	<div id="wrapper" class="inner">
+		<h2><em class="hidden_txt">메인페이지</em></h2>
+		
+		<!-- 메인 이미지 슬라이드 -->
+		<div class="mainBnr">
+			<div class="mainCarousel">
+				<div class="img_thumNail"><img src="../hospice/static/img/main_banner01.jpg" alt="메인배너01"/></div>
+				<div class="img_thumNail"><img src="../hospice/static/img/main_banner02.jpg" alt="메인배너02"/></div>
+				<div class="img_thumNail"><img src="../hospice/static/img/main_banner03.jpg" alt="메인배너03"/></div>
+			</div>
+		</div>
+
+		<div class="sub-section business">
+			<h3><em class="hidden_txt">호스피스 사업</em></h3>
+			<div class="container">
+				<div class="contents">
+					<div class="title">
+						<strong>함께하는 권역별호스피스센터</strong><br/>
+						<span>원자력병원 권역별호스피스센터는 맡은 바 역할을 충실히 해나가며<br/> 국민에게 수준 높은 호스피스완화의료를 제공하기 위해 호스피스 사업을 활성화하겠습니다.</span>
+					</div>	
+					<ul class="inner">
+						<li>
+							<span><a href="#"><img src="static/img/ico_business01.png" alt="호스피스 사업01" /></a></span><br/>
+							<span><a href="#">질향상</a></span>
+						</li>
+						<li>
+							<span><a href="#"><img src="static/img/ico_business02.png" alt="호스피스 사업02" /></a></span><br/>
+							<span><a href="#">교육</a></span>
+						</li>
+						<li>
+							<span><a href="#"><img src="static/img/ico_business03.png" alt="호스피스 사업03" /></a></span><br/>
+							<span><a href="#">홍보</a></span>
+						</li>
+						<li>
+							<span><a href="#"><img src="static/img/ico_business04.png" alt="호스피스 사업04" /></a></span><br/>
+							<span><a href="#">연구</a></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mid-banner">
+				<span class="txt_Myeongjo"><em>환자와 가족 중심의 따뜻한 <br/>호스피스완화의료</em> <em>마주잡은 두 손 놓지 않겠습니다.</em></span>
+			</div>
+		</div>
+
+		<div class="sub-section notice">
+			<h3><em class="hidden_txt">보도자료 &amp; 공지사항</em></h3>
+			<div class="container">
+				<div class="contents notice01">
+					<button class="btn--more" title="보도자료 더보기"><img src="static/img/btn_more.gif" alt="more"/></button>
+					<div class="title"><strong>보도자료</strong></div>
+					<ul class="inner">
+						<li>
+							<div class="thumnail"><a href="#"><img src="static/img/notice_thumnail_01.jpg" alt="보도자료01" /></a></div>
+							<dl>
+								<dt><a href="#">원자력병원, 암성통증 캠페인 성료 설명 설명 설명 설명 설명 설명</a></dt>
+								<dd>원자력병원(원장 홍영준)은 5월 14일(화) 오전 10시 부터 오후 2시까지 1층 로비 및 입원 병동에서 &ldquo;암성통증,조절 암성통증,조절 암성통증,조절 암성통증,조절</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="#">호스피스완화의료센터 캐리커쳐 행사 설명 설명 설명 설명 설명 설명</a></dt>
+								<dd>2월9일(금) 환자와 가족을 위한 캐리컻쳐 행사가 진행되었습니다.</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="#">무용동작치료에 참가한 가족과 의료진 설명 설명 설명 설명 설명 설명</a></dt>
+								<dd>3월19일(화) 가족의 아픔을 함께 나누고 빠른 일상 복뤼를 돕는 돕는 돕는돕는</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="contents notice02">
+					<button class="btn--more" title="공지사항 더보기"><img src="static/img/btn_more.gif" alt="more"/></button>
+					<div class="title"><strong>공지사항</strong></div>
+					<ul class="inner">
+						<li>
+							<div>
+								<span><a href="#">원자력병원,호스피스완화의료돌봄 제공자 양성 과정 운영</a></span>
+								<b><em class="hidden_txt">New</em><img src="static/img/ico-new.png" alt="new" /></b>
+							</div>
+							<div><span>2020.11.01</span></div>
+						</li>
+						<li>
+							<div>
+								<span><a href="#">원자력병원,호스피스완화의료돌봄</a></span>
+								<b><em class="hidden_txt">New</em><img src="static/img/ico-new.png" alt="new" /></b>
+							</div>
+							<div><span>2020.11.02</span></div>
+						</li>
+						<li>
+							<div>
+								<span><a href="#">원자력병원,호스피스완화의료돌봄 제공자 양성 과정 운영</a></span>
+							</div>
+							<div><span>2020.11.03</span></div>
+						</li>
+						<li>
+							<div>
+								<span><a href="#">원자력병원,호스피스완화의료돌봄 제공자 양성 과정 운영</a></span>
+							</div>
+							<div><span>2020.11.04</span></div>
+						</li>
+					</ul>
+
+					<div class="ft-img-slider">
+						<div class="ftCarousel owl-theme">
+							<div class="item">
+								<img src="static/img/ft_bnr_item01.jpg" alt="호스피스&middot;완화의료 전문인력 표준교육 - 심리사회적 돌봄, 영적 돌봄, 전인적 평가, 사별 돌봄 등 핵심 주제와 실습교육" />
+							</div>
+							<div class="item">
+								<img src="static/img/ft_bnr_item01.jpg" alt="호스피스&middot;완화의료 전문인력 표준교육 - 심리사회적 돌봄, 영적 돌봄, 전인적 평가, 사별 돌봄 등 핵심 주제와 실습교육" />
+							</div>
+							<div class="item">
+								<img src="static/img/ft_bnr_item01.jpg" alt="호스피스&middot;완화의료 전문인력 표준교육 - 심리사회적 돌봄, 영적 돌봄, 전인적 평가, 사별 돌봄 등 핵심 주제와 실습교육" />
+							</div>
+							<div class="item">
+								<img src="static/img/ft_bnr_item01.jpg" alt="호스피스&middot;완화의료 전문인력 표준교육 - 심리사회적 돌봄, 영적 돌봄, 전인적 평가, 사별 돌봄 등 핵심 주제와 실습교육" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 하단 -->
+	<footer>
+		<div class="container">
+			<span class="logoFoot"><em class="hidden_txt">원자력병원 권역별호스피스센터</em><img src="static/img/logoFoot.png" alt="원자력병원 권역별호스피스센터 로고 02"></span>
+			<div class="ft_contents">
+				<ul class="ft-tab-list">
+					<li><a href="#privacyPolicy" class="btn-open-pop">개인정보처리방침</a></li>
+					<li><a href="#etcPolicy01" class="btn-open-pop">이메일주소 무단수집거부</a></li>
+					<li><a href="#etcPolicy02" class="btn-open-pop">영상정보처리기기 운영 &middot; 관리 방침</a></li>
+				</ul>
+			</div>
+			<address>
+				<ul>
+					<li>주소 : (01812) 서울시 노원구 노원로 75</li>
+					<li>email : hospice@kirams.re.kr</li>
+					<li>전화 : 02-970-2630, 2782</li>
+					<li>팩스 : 02-970-2428, 2784</li>
+				</ul>
+				<p class="copyright">COPYRIGHT 2020. HOSPICE AND PALLIATIVE CARE. ALL RIGHTS RESERVED.</p>
+			</address>
+			<div class="ft_related_inst dropDown">
+				<span><a href="javascript:void(0);"><em>관련기관 바로가기</em></a></span>
+				<ul class="related_inst">
+					<li><a href="/main/index.do" target="_blank" title="새 창 열기">원자력병원</a></li>
+					<li><a href="http://hospice.go.kr/index.do" target="_blank" title="새 창 열기" rel="noopener noreferrer">중앙호스피스센터</a></li>
+					<li><a href="https://www.kcch.re.kr/dept/main/index.do?DP_CODE=S016" target="_blank" title="새 창 열기">호스피스완화의료센터</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		$(function(){
+			//$Gb.activeFunc().OpenPop('notice_20201008');
+		});
+	</script>
+</body>
+</html>

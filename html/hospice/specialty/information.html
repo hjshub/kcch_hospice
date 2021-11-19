@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>원자력병원 권역별 호스피스 센터 | 정보</title>
+
+	<script src="../static/js/jquery-3.3.1.min.js"></script>
+	<script src="../static/js/jquery-ui.min.js"></script>
+	<script src="../static/js/common.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/base.css"> <!-- reset -->
+	<link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" media="all and (max-width:1280px)" type="text/css" href="../static/css/responsible.css"> <!-- 반응형 -->
+</head>
+<body>
+	<!-- 건너띄기 링크 -->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#gnbList">주 메뉴 바로가기</a></dd>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<!-- 상단 -->
+	<header class="inner">
+		<hgroup class="h_top">
+			<div class="container">
+				<!-- 로고 영역 -->
+				<h1>
+					<a href="\">
+						<span class="hidden_txt">로고 이미지</span>
+						<img src="../static/img/logoTop.png" alt="원자력병원 권역별호스피스센터 로고 01" />
+					</a>
+				</h1>
+
+				<!-- Gnb pc-->
+				<nav class="gnb-web" id="gnbList">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/hospice/info/greeting.html">권역별호스피스센터</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/info/greeting.html">인사말</a></li>
+										<li><a href="/hospice/info/history.html">연혁</a></li>
+										<li><a href="/hospice/info/organization.html">조직도</a></li>
+										<li><a href="/hospice/info/business.html">주요사업</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/hospice/specialty/introduce.html">호스피스전문기관</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/specialty/information.html">정보</a></li>
+										<li><a href="/hospice/specialty/introduce.html">소개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/hospice/business/edu.html">호스피스사업</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/business/edu.html">교육</a></li>
+										<li><a href="/hospice/business/promotion.html">홍보</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/hospice/notice/notice.html">열린광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/notice/notice.html">공지사항</a></li>
+										<li><a href="/hospice/notice/pressRelease.html">보도자료</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- Gnb mobile-->
+				<a href="#allMenu" class="m-menu">
+					<i></i>
+					<i></i>
+					<i></i>
+					<em class="hidden_txt">모바일 전체메뉴</em>
+				</a>
+				<aside class="gnb-mob">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="javascript:void(0);">권역별호스피스센터</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/info/greeting.html">인사말</a></li>
+										<li><a href="/hospice/info/history.html">연혁</a></li>
+										<li><a href="/hospice/info/organization.html">조직도</a></li>
+										<li><a href="/hospice/info/business.html">주요사업</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">호스피스전문기관</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/specialty/information.html">정보</a></li>
+										<li><a href="/hospice/specialty/introduce.html">소개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">호스피스사업</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/business/edu.html">교육</a></li>
+										<li><a href="/hospice/business/promotion.html">홍보</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">열린광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/hospice/notice/notice.html">공지사항</a></li>
+										<li><a href="/hospice/notice/pressRelease.html">보도자료</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="gnb-bg"><em class="hidden_txt">백그라운드 영역</em></div>
+		</hgroup>
+	</header>
+
+	<!-- 본문 -->
+	<div id="wrapper" class="inner">
+		<div class="sub-top-bnr"><h2>호스피스전문기관</h2></div>
+		<div class="location">
+			<div class="container">
+				<a href="#" class="home"><em class="hidden_txt">홈 바로가기</em></a>
+				<div class="location-wrap">
+					<div class="dropDown" id="depth01">
+						<span><a href="javascript:void(0);">호스피스전문기관</a></span>
+						<ul class="cateList">
+							<li><a href="#">권역별호스피스센터</a></li>
+							<li><a href="#">호스피스전문기관</a></li>
+							<li><a href="#">호스피스사업</a></li>
+							<li><a href="#">열린광장</a></li>
+						</ul>
+					</div>
+					<div class="dropDown" id="depth02">
+						<span><a href="javascript:void(0);">정보</a></span>
+						<ul class="cateList">
+							<li><a href="#">정보</a></li>
+							<li><a href="#">소개</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="contents information">
+				<h3>호스피스전문기관 정보</h3>
+				<p class="desc">
+					권역별호스피스센터(9권역)는 서울 지역 내 12개 호스피스전문기관과 함께하고 있습니다.<br/> 
+					9권역 호스피스전문기관에서 제공하는 서비스 유형은  입원형, 가정형, 자문형, 소아청소년 완화의료입니다.
+				</p>
+				<p><strong>9권역 호스피스전문기관</strong></p>
+				<div class="basic-type">
+					<table>
+						<caption>9권역 호스피스전문기관</caption>
+						<colgroup>
+							<col style="width:5%;" />
+							<col style="width:7.5%;" />
+							<col style="width:9%;" />
+							<col style="width:11%;" />
+							<col style="width:auto;" />
+							<col style="width:12%;" />
+							<col style="width:7%;" />
+							<col style="width:7%;" />
+							<col style="width:7%;" />
+							<col style="width:10%;" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" rowspan="2">순번</th>
+								<th scope="colgroup" colspan="2">지역</th>
+								<th scope="col" rowspan="2">기관종류</th>
+								<th scope="col" rowspan="2">기관명</th>
+								<th scope="col" rowspan="2">문의전화</th>
+								<th scope="colgroup" colspan="4">서비스 유형</th>
+							</tr>
+							<tr>
+								<th scope="col">시&#47;도</th>
+								<th scope="col">시&#47;군&#47;구</th>
+								<th scope="col">입원형</th>
+								<th scope="col">가정형</th>
+								<th scope="col">자문형</th>
+								<th scope="col">소아청소년</th>
+							</tr>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>서울</td>
+									<td>은평구</td>
+									<td>종합병원</td>
+									<td class="left">가톨릭대학교 은평성모병원</td>
+									<td class="left">02-2030-4296</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>서울</td>
+									<td>동대문구</td>
+									<td>상급종합병원</td>
+									<td class="left">경희대학교병원</td>
+									<td class="left">02-958-9900</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>서울</td>
+									<td>성북구</td>
+									<td>상급종합병원</td>
+									<td class="left">고려대학교 안암병원</td>
+									<td class="left">02-920-6341</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>서울</td>
+									<td>중구</td>
+									<td>종합병원</td>
+									<td class="left">국립중앙의료원</td>
+									<td class="left">02-2276-2240</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>서울</td>
+									<td>종로구</td>
+									<td>종합병원</td>
+									<td class="left">서울적십자병원</td>
+									<td class="left">02-2002-8982</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>서울</td>
+									<td>종로구</td>
+									<td>상급종합병원</td>
+									<td class="left">서울대학교병원</td>
+									<td class="left">02-2072-3066</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>서울</td>
+									<td>동대문구</td>
+									<td>종합병원</td>
+									<td class="left">서울특별시 동부병원</td>
+									<td class="left">02-920-9375</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>서울</td>
+									<td>중랑구</td>
+									<td>병원</td>
+									<td class="left">서울특별시 북부병원</td>
+									<td class="left">02-2036-0419</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>서울</td>
+									<td>은평구</td>
+									<td>병원</td>
+									<td class="left">서울특별시 서북병원</td>
+									<td class="left">02-3156-3025</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>서울</td>
+									<td>중랑구</td>
+									<td>종합병원</td>
+									<td class="left">서울특별시 서울의료원</td>
+									<td class="left">02-2276-8127</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>서울</td>
+									<td>서대문구</td>
+									<td>상급종합병원</td>
+									<td class="left">연세대학교 의과대학 세브란스병원</td>
+									<td class="left">02-2228-4301</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>서울</td>
+									<td>노원구</td>
+									<td>종합병원</td>
+									<td class="left">한국원자력의학원 원자력병원</td>
+									<td class="left">02-970-2630</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+									<td><em class="hidden_txt">예</em><img src="../static/img/ico-yes.png" alt="ok"/ ></td>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody>
+						</thead>
+					</table>
+				</div>
+				
+				<h4>호스피스전문기관 이용 방법</h4>
+				<div class="step-list">
+					<ul class="inner">
+						<li>
+							<dl>
+								<dt><b>호스피스전문기관<br/>선택</b></dt>
+								<dd>
+									<strong>01</strong>
+									<ul class="square-list">
+										<li>기존의 담당 의료진과 상의하여 호스피스&middot;완화의료에 대한 안내를 받습니다.</li>
+										<li>환자의 상태, 거주지, 간병 비용 등을 고려하여 적합한 호스피스 전문기관을 선택합니다.</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><b>서류 준비</b></dt>
+								<dd>
+									<strong>02</strong>
+									<span>필요 서류</span>
+									<ul class="square-list">
+										<li>의사 소견서 또는 진료의뢰서</li>
+										<li>의무기록사본<br/> <em class="txt-xs">(최근검사결과지, CT, MRI,CD 복사본 등)</em></li>
+										<li>투약기록지</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><b>호스피스전문기관<br/>방문</b></dt>
+								<dd>
+									<strong>03</strong>
+									<ul class="square-list">
+										<li>입원을 원할 경우, 호스피스 담당의사에게 진료 및 상담을 받습니다.</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+
+				<h4>호스피스전문기관 제공 서비스</h4>
+				<div class="svc-list bg--gray">
+					<ul class="inner">
+						<li>
+							<div>
+								<strong>다양한 프로그램</strong>
+								<span>음악요법, 미술요법, 마사지 등 다양한 프로그램을 통해 정서적, 신체적 도움을 받아 삶을 의미 있게 보내실 수 있도록 돕습니다.</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<strong>증상 조절</strong>
+								<span>메스꺼움, 구토, 수면장애, 식욕부진, 숨 가쁨, 변비 등 환자들이 호소하는 증상들이 상당 부분 완화됩니다.</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<strong>통증 조절</strong>
+								<span>일반 의료기관보다 호스피스전문기관에서<br/> 통증이 더 잘 조절됩니다.<br/> <em>출처: 2018 국가 호스피스&middot;완화의료 연례보고서</em></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<strong>임종 돌봄</strong>
+								<span>환자와 가족이 마지막을 함께하는 임종이<br/> 더 뜻깊을 수 있도록<br/> 서비스를 제공합니다.</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<strong>사별 돌봄</strong>
+								<span>임종 후 남겨진 가족들을 위한 서비스를 제공합니다.</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 하단 -->
+	<footer>
+		<div class="container">
+			<span class="logoFoot"><em class="hidden_txt">원자력병원 권역별호스피스센터</em><img src="../static/img/logoFoot.png" alt="원자력병원 권역별호스피스센터 로고 02"></span>
+			<div class="ft_contents">
+				<ul class="ft-tab-list">
+					<li><a href="#privacyPolicy" class="btn-open-pop">개인정보처리방침</a></li>
+					<li><a href="#etcPolicy01" class="btn-open-pop">이메일주소 무단수집거부</a></li>
+					<li><a href="#etcPolicy02" class="btn-open-pop">영상정보처리기기 운영 &middot; 관리 방침</a></li>
+				</ul>
+			</div>
+			<address>
+				<ul>
+					<li>주소 : (01812) 서울시 노원구 노원로 75</li>
+					<li>email : hospice@kirams.re.kr</li>
+					<li>전화 : 02-970-2630, 2782</li>
+					<li>팩스 : 02-970-2428, 2784</li>
+				</ul>
+				<p class="copyright">COPYRIGHT 2020. HOSPICE AND PALLIATIVE CARE. ALL RIGHTS RESERVED.</p>
+			</address>
+			<div class="ft_related_inst dropDown">
+				<span><a href="javascript:void(0);"><em>관련기관 바로가기</em></a></span>
+				<ul class="related_inst">
+					<li><a href="/main/index.do" target="_blank" title="새 창 열기">원자력병원</a></li>
+					<li><a href="http://hospice.go.kr/index.do" target="_blank" title="새 창 열기" rel="noopener noreferrer">중앙호스피스센터</a></li>
+					<li><a href="https://www.kcch.re.kr/dept/main/index.do?DP_CODE=S016" target="_blank" title="새 창 열기">호스피스완화의료센터</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

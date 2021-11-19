@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>파일 리스트 | 동원 홈플러스 주문 App</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/file_list.css">
+	</head>
+	<body>	
+		<div id="wrapper">
+			<div class="container">
+				<section class="ko">
+					<h2>파일리스트(front)</h2>
+					<div class="table-style">
+						<table>
+							<caption>파일 목록(NO, 구분, 파일경로)</caption>
+							<colgroup>
+								<col style="width:7%;"/>
+								<col style="width:12%;"/>
+								<col style="width:20%;"/>
+								<col style="width:auto;"/>
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">NO</th>
+									<th scope="col" colspan="2">구분</th>
+									<th scope="col">파일경로</th>
+								</tr>
+							</thead>
+							<tfoot></tfoot>
+							<tbody>
+								<tr>
+									<td class="count"></td>
+									<td colspan="2">메인</td>
+									<td><a href="../html/hospice/index.html" target="_blank">/hospice/index.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td rowspan="4">권역별호스피스센터</td>
+									<td>인사말</td>
+									<td><a href="../html/hospice/info/greeting.html" target="_blank">/hospice/info/greeting.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>연혁</td>
+									<td><a href="../html/hospice/info/history.html" target="_blank">/hospice/info/history.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>조직도</td>
+									<td><a href="../html/hospice/info/organization.html" target="_blank">/hospice/info/organization.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>주요사업</td>
+									<td><a href="../html/hospice/info/business.html" target="_blank">/hospice/info/business.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td rowspan="2">호스피스전문기관</td>
+									<td>정보</td>
+									<td><a href="../html/hospice/specialty/information.html" target="_blank">/hospice/specialty/information.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>소개</td>
+									<td><a href="../html/hospice/specialty/introduce.html" target="_blank">/hospice/specialty/introduce.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td rowspan="2">호스피스사업</td>
+									<td>교육</td>
+									<td><a href="../html/hospice/business/edu.html" target="_blank">/hospice/business/edu.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>홍보</td>
+									<td><a href="../html/hospice/business/promotion.html" target="_blank">/hospice/business/promotion.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td rowspan="5">열린광장</td>
+									<td>공지사항</td>
+									<td><a href="../html/hospice/notice/notice.html" target="_blank">/hospice/notice/notice.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>언론보도</td>
+									<td><a href="../html/hospice/notice/pressRelease.html" target="_blank">/hospice/notice/pressRelease.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>게시판 상세페이지</td>
+									<td><a href="../html/hospice/notice/notice_detail.html" target="_blank">/hospice/notice/notice_detail.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>공지사항 검색값 없을 시</td>
+									<td><a href="../html/hospice/notice/search_none_notice.html" target="_blank">/hospice/notice/search_none_notice.html</a></td>
+								</tr>
+								<tr>
+									<td class="count"></td>
+									<td>언론보도 검색값 없을 시</td>
+									<td><a href="../html/hospice/notice/search_none_press.html" target="_blank">/hospice/notice/search_none_press.html</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</div>		
+		</div>
+		<script>
+			var counts = document.querySelectorAll('.count');
+
+			for(var i=0; i < counts.length; i++) counts[i].innerHTML = i + 1;
+		</script>
+	</body>
+</html>	
+	  	
