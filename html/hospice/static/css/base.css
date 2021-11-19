@@ -1,4 +1,4 @@
-@charset 'euc-kr';
+@charset 'utf-8';
 /*-----------------------------------------------------------------*/
 /* Reset
 /*-----------------------------------------------------------------*/
@@ -56,7 +56,7 @@ select{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	border:1px solid #ababab;
-	font:500 14px 'Noto Sans CJK KR', 'Noto Sans KR', '¸¼Àº °íµñ', '³ª´®°íµñ', sans-serif;
+	font:500 14px 'Noto Sans CJK KR', 'Noto Sans KR', 'ë§‘ì€ ê³ ë”•', 'ë‚˜ëˆ”ê³ ë”•', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */

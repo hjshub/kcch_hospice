@@ -1,16 +1,16 @@
 
-@charset 'euc-kr';
+@charset 'utf-8';
 
 /*-----------------------------------------------------------------*/
 /* style
 /*-----------------------------------------------------------------*/
 
-html, body { width:100%; height:100%; font:500 14px 'Noto Sans CJK KR', 'Noto Sans KR', '¸¼Àº °íµñ', '³ª´® °íµñ', sans-serif; vertical-align:middle; }
+html, body { width:100%; height:100%; font:500 14px 'Noto Sans CJK KR', 'Noto Sans KR', 'ë§‘ì€ ê³ ë”•', 'ë‚˜ëˆ” ê³ ë”•', sans-serif; vertical-align:middle; }
 body {min-width:320px; color: #333; letter-spacing: -0.7px; overflow:hidden; overflow-y:scroll; }
 a { text-decoration:none; }
 em, b, span, p, strong { word-break:keep-all; white-space:normal; word-wrap:break-word; overflow-wrap:break-word; }
 
-.txt_Myeongjo * {font-family:'Nanum Myeongjo', '¸¼Àº °íµñ', '³ª´® °íµñ', sans-serif; vertical-align:middle;}
+.txt_Myeongjo * {font-family:'Nanum Myeongjo', 'ë§‘ì€ ê³ ë”•', 'ë‚˜ëˆ” ê³ ë”•', sans-serif; vertical-align:middle;}
 
 #skipNavigation dd { font-size:0; width:100%; position:relative; }
 #skipNavigation dd a { display:inline-block; *display:inline; *zoom:1; width:100%; font-size:1.2rem; line-height:50px; position:absolute; left:0; top:-50px; text-align:center; background-color:#106abf; color:#fff; transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-out; -moz-transition:all 0.2s ease-out; -ms-transition:all 0.2s ease-out; }
